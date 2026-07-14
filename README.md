@@ -237,5 +237,7 @@ Spark Declarative Pipelines automatically orchestrate streaming transformations,
 
 ---
 
+# Data Flow
 
+![Data Flow](images/data_flow.png)
 
