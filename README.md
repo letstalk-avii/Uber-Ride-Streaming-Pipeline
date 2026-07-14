@@ -39,34 +39,25 @@ The project follows the **Medallion Architecture** and demonstrates industry-sta
 
 ---
 
-# 🛠️ Technology Stack
+# 🛠️ Tech Stack
 
-| Category           | Technology                             |
-| ------------------ | -------------------------------------- |
-| Cloud Platform     | Microsoft Azure                        |
-| Programming        | Python                                 |
-| SQL                | Databricks SQL                         |
-| Processing Engine  | Apache Spark                           |
-| Framework          | PySpark                                |
-| Streaming          | Spark Structured Streaming             |
-| Messaging          | Azure Event Hubs                       |
-| Data Integration   | Azure Data Factory                     |
-| Storage            | Azure Data Lake Storage Gen2           |
-| Lakehouse          | Delta Lake                             |
-| Pipeline Framework | Spark Declarative Pipelines (Lakeflow) |
-| CDC                | AUTO CDC Flow                          |
-| Architecture       | Medallion Architecture                 |
-| Modeling           | Star Schema                            |
-| Version Control    | Git & GitHub                           |
+<p align="center">
+  <img src="https://go-skill-icons.vercel.app/api/icons?i=azure,python,github,spark,databricks" />
+</p>
+
+<p align="center">
+  Azure Data Factory • Azure Event Hubs • Azure Data Lake Storage Gen2 • Delta Lake • Spark Structured Streaming • Lakeflow Declarative Pipelines • Databricks SQL • AUTO CDC Flow
+</p>
 
 ---
+
 
 # 📂 Project Structure
 
 ```text
 uber-real-time-data-engineering-pipeline
 │
-├── code
+├── Cods_Files
 │   ├── bronze_adls.ipynb
 │   ├── silver_obt.ipynb
 │   ├── silver_obt.sql
@@ -77,7 +68,7 @@ uber-real-time-data-engineering-pipeline
 │   ├── data.py
 │   ├── api.py
 │
-├── data
+├── Data
 │   ├── bulk_rides.json
 │   ├── files_array.json
 │   ├── map_cities.json
