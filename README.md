@@ -29,13 +29,13 @@ The project follows the **Medallion Architecture** and demonstrates industry-sta
 
 ## Overall Solution Architecture
 
-![Architecture](architecture.png)
+![Architecture](Images/architecture.png)
 
 ---
 
 ## Databricks Declarative Pipeline
 
-![Pipeline Graph](databricks-declarative-pipeline.png)
+![Pipeline Graph](Images/databricks-declarative-pipeline.png)
 
 ---
 
@@ -104,7 +104,7 @@ These events are published to **Azure Event Hubs**, providing a scalable and fau
 
 
 
-![Web App To Event Hub](webtoEventhub.png)
+![Web App To Event Hub](Images/webtoEventhub.png)
 
 
 
