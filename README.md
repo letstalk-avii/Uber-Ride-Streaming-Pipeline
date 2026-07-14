@@ -132,9 +132,6 @@ Rather than hardcoding file names, the pipeline uses a **Lookup Activity** to re
 
 The returned file list is processed dynamically using a **ForEach Activity**, making the ingestion framework scalable and reusable.
 
-📷
-
-![ADF Pipeline](images/adf_pipeline.png)
 
 ---
 
@@ -183,9 +180,9 @@ Unified Staging Table
 
 The staging table is then enriched by joining multiple mapping datasets to create a business-ready **One Big Table (OBT)**.
 
-📷
 
-![Silver Layer](images/silver_layer.png)
+
+![Silver Layer](Images/silver_layer.png)
 
 ---
 
@@ -220,9 +217,9 @@ AUTO CDC Flow is used to implement Slowly Changing Dimensions.
 
 * Location
 
-📷
 
-![Gold Layer](images/gold_layer.png)
+
+![Gold Layer](Images/gold_layer.png)
 
 ---
 
@@ -236,19 +233,15 @@ The final analytical model follows a Star Schema.
 * Analytical Queries
 * Dashboarding
 
-📷
-
-![Star Schema](images/star_schema.png)
-
 ---
 
 # 📊 Databricks Pipeline Graph
 
 Spark Declarative Pipelines automatically orchestrate streaming transformations, views, dimension tables, and fact tables.
 
-📷
 
-![Pipeline Graph](images/pipeline_graph.png)
+
+![ADF Pipeline](Images/adf_pipeline.png)
 
 ---
 
@@ -297,65 +290,5 @@ Spark Declarative Pipelines automatically orchestrate streaming transformations,
 
 ---
 
-# ⚙️ Key Features
 
-* Real-Time Streaming Pipeline
-* Azure Event Hubs Integration
-* Azure Data Factory Metadata-Driven Pipeline
-* Dynamic Lookup Activity
-* ForEach Activity
-* Batch + Streaming Integration
-* Spark Structured Streaming
-* Delta Lake
-* Spark Declarative Pipelines (Lakeflow)
-* Append Flow
-* AUTO CDC Flow
-* One Big Table (OBT)
-* Slowly Changing Dimension Type 1
-* Slowly Changing Dimension Type 2
-* Star Schema Modeling
-* Medallion Architecture
-* End-to-End Lakehouse Pipeline
 
----
-
-# 📸 Project Screenshots
-
-| Component             | Screenshot                     |
-| --------------------- | ------------------------------ |
-| Solution Architecture | ![](images/architecture.png)   |
-| Azure Data Factory    | ![](images/adf_pipeline.png)   |
-| Event Hub             | ![](images/eventhub.png)       |
-| Bronze Layer          | ![](images/bronze_layer.png)   |
-| Silver Layer          | ![](images/silver_layer.png)   |
-| Gold Layer            | ![](images/gold_layer.png)     |
-| Pipeline Graph        | ![](images/pipeline_graph.png) |
-| Star Schema           | ![](images/star_schema.png)    |
-
----
-
-# 🚀 Future Enhancements
-
-* Unity Catalog Integration
-* Databricks Asset Bundles
-* CI/CD with Azure DevOps
-* Data Quality Checks
-* Great Expectations Integration
-* Power BI Dashboard
-* Monitoring & Alerting
-* Performance Optimization
-* Incremental Data Validation
-
----
-
-# 👨‍💻 Author
-
-**Avinash Kamble**
-
-Aspiring Azure Data Engineer
-
----
-
-## ⭐ One important suggestion
-
-Your current architecture diagram is good, but if you redesign it with **official Azure service icons** (Azure Architecture Icons) and a cleaner layout, the repository will look significantly more professional. Combined with this README, it will resemble the kind of polished project portfolio that hiring managers often expect from junior-to-mid-level data engineering candidates.
