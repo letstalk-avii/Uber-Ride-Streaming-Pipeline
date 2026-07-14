@@ -1,6 +1,6 @@
 
 
-# 🚖 End-to-End Real-Time Uber Data Engineering Pipeline on Azure
+# 🚖 Uber Ride Streaming Pipeline on Azure
 
 > **Production-inspired Real-Time Data Engineering Pipeline built using Azure Event Hubs, Azure Data Factory, Azure Databricks, Spark Structured Streaming, Delta Lake and Spark Declarative Pipelines (Lakeflow).**
 
@@ -76,7 +76,6 @@ uber-real-time-data-engineering-pipeline
 ├── images
 │   ├── architecture.png
 │   ├── databricks-declarative-pipeline.png
-│   ├── bronze_layer.png
 │   ├── silver_layer.png
 │   ├── gold_layer.png
 │   ├── adf_pipeline.png
@@ -146,10 +145,6 @@ The Bronze layer stores raw data exactly as received.
 * Mapping Files
 
 No transformations are performed at this stage.
-
-📷
-
-![Bronze Layer](images/bronze_layer.png)
 
 ---
 
