@@ -29,7 +29,7 @@ The project follows the **Medallion Architecture** and demonstrates industry-sta
 
 ## Overall Solution Architecture
 
-![Architecture](Images/architecture.png)
+![Architecture](images/architecture.png)
 
 
 ---
@@ -75,14 +75,13 @@ uber-real-time-data-engineering-pipeline
 │
 ├── images
 │   ├── architecture.png
-│   ├── pipeline_graph.png
+│   ├── databricks-declarative-pipeline.png
 │   ├── bronze_layer.png
 │   ├── silver_layer.png
 │   ├── gold_layer.png
 │   ├── adf_pipeline.png
-│   ├── eventhub.png
-│   ├── star_schema.png
-│   └── obt.png
+│   ├── webtoEventhub.png
+│ 
 │
 └── README.md
 ```
@@ -99,7 +98,7 @@ These events are published to **Azure Event Hubs**, providing a scalable and fau
 
 
 
-![Web App To Event Hub](Images/webtoEventhub.png)
+![Web App To Event Hub](images/webtoEventhub.png)
 
 
 
@@ -129,7 +128,7 @@ The returned file list is processed dynamically using a **ForEach Activity**, ma
 
 
 
-![ADF Pipeline](Images/adf_pipeline.png)
+![ADF Pipeline](images/adf_pipeline.png)
 
 ---
 
@@ -180,7 +179,7 @@ The staging table is then enriched by joining multiple mapping datasets to creat
 
 
 
-![Silver Layer](Images/silver_layer.png)
+![Silver Layer](images/silver_layer.png)
 
 ---
 
@@ -217,7 +216,7 @@ AUTO CDC Flow is used to implement Slowly Changing Dimensions.
 
 
 
-![Gold Layer](Images/gold_layer.png)
+![Gold Layer](images/gold_layer.png)
 
 ---
 
@@ -239,52 +238,7 @@ Spark Declarative Pipelines automatically orchestrate streaming transformations,
 
 
 
-![Pipeline Graph](Images/databricks-declarative-pipeline.png)
-
----
-
-# 📈 Data Flow
-
-```text
-                     Custom Uber Web Application
-                                │
-                                ▼
-                       Azure Event Hubs
-                                │
-                 Spark Structured Streaming
-                                │
-                                ▼
-                    Bronze Streaming Table
-                                │
-                                │
-      GitHub Repository (Mapping & Historical Files)
-                                │
-                                ▼
-                    Azure Data Factory
-          Lookup → ForEach → Copy Activity
-                                │
-                                ▼
-                Bronze Layer (ADLS Gen2)
-                                │
-                                ▼
-              Spark Declarative Pipelines
-                     Append Flow
-                                │
-                                ▼
-                  Unified Staging Table
-                                │
-                Join Mapping Tables
-                                │
-                                ▼
-                Silver One Big Table (OBT)
-                                │
-                     AUTO CDC Flow
-                                │
-                                ▼
-                      Gold Layer
-                                │
-                Fact + Dimension Tables
-```
+![Pipeline Graph](images/databricks-declarative-pipeline.png)
 
 ---
 
