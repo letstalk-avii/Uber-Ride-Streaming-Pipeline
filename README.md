@@ -55,7 +55,7 @@ The project follows the **Medallion Architecture** and demonstrates industry-sta
 </p>
 
 <p align="center">
-  Azure Data Factory • Azure Event Hubs • Azure Data Lake Storage Gen2 • Delta Lake • Spark Structured Streaming • Lakeflow Declarative Pipelines • Databricks SQL • AUTO CDC Flow
+  Azure Data Factory • Azure Event Hubs • Azure Data Lake Storage Gen2 • Azure Databricks • PySpark • Spark Structured Streaming • Delta Lake • Lakeflow Declarative Pipelines • Databricks SQL • AUTO CDC Flow
 </p>
 
 ---
@@ -66,7 +66,7 @@ The project follows the **Medallion Architecture** and demonstrates industry-sta
 ```text
 uber-real-time-data-engineering-pipeline
 │
-├── Cods_Files
+├── code
 │   ├── bronze_adls.ipynb
 │   ├── silver_obt.ipynb
 │   ├── silver_obt.sql
@@ -77,7 +77,7 @@ uber-real-time-data-engineering-pipeline
 │   ├── data.py
 │   ├── api.py
 │
-├── Data
+├── data
 │   ├── bulk_rides.json
 │   ├── files_array.json
 │   ├── map_cities.json
@@ -159,6 +159,8 @@ The Bronze layer stores raw data exactly as received.
 * Mapping Files
 
 No transformations are performed at this stage.
+
+![Bronze Layer](images/bronze_layer.png)
 
 ---
 
