@@ -69,6 +69,7 @@ uber-real-time-data-engineering-pipeline
 ├── code
 │   ├── bronze_adls.ipynb
 │   ├── silver_obt.ipynb
+│   ├── gold_layer.ipynb
 │   ├── silver_obt.sql
 │   ├── ingest.py
 │   ├── silver.py
