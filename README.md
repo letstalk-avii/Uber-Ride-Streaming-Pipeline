@@ -110,8 +110,9 @@ A custom-built Uber Web Application continuously generates ride booking events.
 These events are published to **Azure Event Hubs**, providing a scalable and fault-tolerant streaming ingestion layer.
 
 
-
-![Web App To Event Hub](images/webtoEventhub.png)
+<div align="center">
+  <img src="images/webtoEventhub.png" alt="Web App To Event Hub">
+</div>
 
 
 
@@ -141,7 +142,11 @@ The returned file list is processed dynamically using a **ForEach Activity**, ma
 
 
 
-![ADF Pipeline](images/adf_pipeline.png)
+
+<div align="center">
+  <img src="images/adf_pipeline.png" alt="ADF Pipelineb">
+</div>
+
 
 ---
 
@@ -190,7 +195,11 @@ The staging table is then enriched by joining multiple mapping datasets to creat
 
 
 
-![Silver Layer](images/silver_layer.png)
+
+<div align="center">
+  <img src="images/silver_layer.png" alt="Silver Layer">
+</div>
+
 
 ---
 
@@ -227,8 +236,10 @@ AUTO CDC Flow is used to implement Slowly Changing Dimensions.
 
 
 
-![Gold Layer](images/gold_layer.png)
 
+<div align="center">
+  <img src="images/gold_layer.png" alt="Gold Layer">
+</div>
 ---
 
 # ⭐ Star Schema
