@@ -24,6 +24,20 @@ The pipeline simulates an Uber ride-booking platform where:
 The project follows the **Medallion Architecture** and demonstrates industry-standard concepts such as metadata-driven ingestion, structured streaming, Delta Lake, Star Schema modeling, and Change Data Capture.
 
 ---
+## 🚀 Project Highlights
+
+- Real-Time Streaming using Azure Event Hubs
+- Metadata-Driven Azure Data Factory Pipeline
+- Spark Structured Streaming
+- Lakeflow Declarative Pipelines
+- Delta Lake
+- One Big Table (OBT)
+- AUTO CDC Flow
+- Slowly Changing Dimensions (SCD Type 1 & Type 2)
+- Star Schema Modeling
+- Medallion Architecture
+
+---
 
 # 🏗️ Solution Architecture
 
@@ -241,3 +255,12 @@ Spark Declarative Pipelines automatically orchestrate streaming transformations,
 
 ![Data Flow](images/data_flow.png)
 
+---
+
+## 👨‍💻 Author
+
+**Avinash Kamble**
+
+Aspiring Azure Data Engineer
+
+⭐ If you found this project useful, consider giving it a star.
